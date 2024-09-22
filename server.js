@@ -128,6 +128,8 @@ app.get('/download/:fileName', async (req, res) => {
     }
 });
 
+connectToSftp()
+
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
